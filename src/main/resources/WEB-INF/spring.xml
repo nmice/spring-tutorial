@@ -5,16 +5,16 @@
  		http://www.springframework.org/schema/beans
  		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
 
-    <bean name="client" class="ru.neginskiy.spring.Client">
+    <bean name="client" class="ru.neginskiy.spring.included.Client">
         <constructor-arg value="1"/>
         <constructor-arg value="John Smith"/>
     </bean>
 
-    <bean name="eventLogger" class="ru.neginskiy.spring.ConsoleEventLogger"/>
+    <bean name="eventLogger" class="ru.neginskiy.spring.included.ConsoleEventLogger"/>
 
-    <bean name="app" class="ru.neginskiy.spring.App">
+    <bean name="app" class="ru.neginskiy.spring.included.App">
         <constructor-arg ref="client"/>
-        <constructor-arg ref="consoleEventLogger"/>
+        <constructor-arg ref="eventLogger"/>
     </bean>
 
 </beans>
