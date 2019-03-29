@@ -1,4 +1,4 @@
-package ru.neginskiy.spring;
+package ru.neginskiy.spring.test;
 
 import java.util.ArrayList;
 import java.util.List;
