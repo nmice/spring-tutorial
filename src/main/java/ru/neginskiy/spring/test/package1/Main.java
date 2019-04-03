@@ -9,6 +9,10 @@ public class Main {
         System.out.println("Hello");
     }
 
+    public void hello(int i) {
+        System.out.println("Hello"+i);
+    }
+
     public static void main(String[] args) {
         Main mainClass = new Main();
         System.out.println(mainClass.a);
@@ -19,6 +23,21 @@ public class Main {
         Main class2main = new Class2();
         System.out.println(class2main.a);
 
+        class E{
+            String e = "Local class";
+        }
+
     }
 
+    static class B {
+        String b= "Static Inner class";
+    }
+
+    class C{
+        String c= "Inner class";
+    }
 }
+class D{
+    String d = "Local";
+}
+
